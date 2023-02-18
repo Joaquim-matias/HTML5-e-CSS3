@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+           /* text-decoration: underline;                          /*ficar com sublinhado*/
+            /*font-style: italic;                                 /*estilo da fonte*/
+           /* font-weight:lighter ;                              /*peso da fonte*/
+            /*font-size: 1em;                                   /*tamanho*/
+            /*font-family:Arial, Helvetica, sans-serif;        /*tipo da fonte*/
+
+            /* essas 4 declarações são bastantes usadas
+            
+            tem como simplificar essas linhas com um termo chamdo;
+            
+            Shorthand font
+            font-style > font-weight > font-size > font-family  ( tem que ser nessa sequência)
+            
+           EX= font: italic bolder 1em sans-serif             */
+            
+              
+         }
+
+         h1 {
+            font: italic lighter 3em arial, sans-serif;
+
+
+          }
+          h2 {
+            font: italic bolder 2em arial, sans-serif;
+          /* Essa são as formas resumidas*/
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, dolores? Est magni corrupti ipsa saepe, corporis inventore eligendi sed eos assumenda, illo repellat autem dolore distinctio perspiciatis temporibus fugiat modi?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti quisquam dolore dolorum corporis placeat quis maxime, reiciendis minima dignissimos excepturi eveniet aut consectetur doloribus quos voluptatibus ad laboriosam atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores alias nemo animi. Eveniet repellat quasi nam nulla odio. Enim aspernatur sit voluptatum quae quos eligendi accusamus iusto alias maxime ea!</p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorum cum error et. Cumque aut assumenda porro vel, eius blanditiis dolorem necessitatibus! Laudantium mollitia porro optio in, officiis repellat amet.</p>
+
+         <!-- Medidas absolutas; cm, mm, in (polegada) px, pt, pc (essas duas ulti.. não recome.. para  telas)
+          Medidas relativas; em, ex, rem, vw, px* e em* são as recomendadas pela W3c
+          16px geralmente =1em
+
+          /*cuidado com palavras parecidas;
+
+          weight= peso
+          width=  largura
+          height= altura
+
+          peso da letra pode ser escrito ou de 100 a 900 ( tem que ver se tem as opções disponiveis)
+          lighter= leve
+          bold=    normal
+          bolde=   pesado -->
+
+</body>
+</html>
