@@ -30,7 +30,7 @@ Grandes telas: acima de 1200px
 
    main::after {
     content:  'Essa impressão foi feita através do curso do Guanabara';
-    text-decoration:overline ;
+    text-decoration:underline ;
    }
 
    main h1 {
