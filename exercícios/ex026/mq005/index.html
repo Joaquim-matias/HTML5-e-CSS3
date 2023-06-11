@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clicMenu()">menu</i>
@@ -24,7 +25,7 @@
     </header>
     <main>
         <article>
-          <h2>Além Da Ordem: Mais 12 Regras Para a Vida</h2>
+          <h2>Além Da Ordem: Mais 12 Regras Para a Vida</h2> <br>
          <p>
             Em 12 Regras para a Vida, o Dr. Jordan B. Peterson, aclamado psicólogo clínico e professor de Harvard e da Universidade de Toronto, ofereceu um antídoto para o caos em nossas vidas: verdades eternas aplicadas às ansiedades contemporâneas. Seus insights ajudaram milhões de leitores e ecoaram intensamente em todo o mundo. Agora, nesta tão aguardada sequência, Peterson vai ainda mais longe, demonstrando que parte do sentido da vida requer explorar o domínio além do que conhecemos e nos adaptar a um mundo em constante transformação. Enquanto o excesso de caos nos ameaça com a incerteza, o excesso de ordem nos leva à ausência de curiosidade e de vitalidade criativa. Além da Ordem é um chamado para o equilíbrio desses dois princípios fundamentais da realidade ― ordem e caos ― e revela o profundo significado que podemos encontrar na tênue linha que os separa. Em tempos de instabilidade e sofrimento, Peterson nos lembra de que há fontes das quais podemos extrair forças: insights baseados na psicologia, na filosofia e nos grandes mitos e histórias da humanidade. Inspirado pelas verdades arduamente conquistadas da sabedoria ancestral, bem como pelas experiências pessoais e pela prática clínica, Peterson oferece mais doze princípios para guiar os leitores em direção a uma vida mais corajosa, verdadeira e significativa.
          </p>
@@ -32,8 +33,18 @@
     </main>
 
     <script>
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
         function clickMenu() {
-             if (itens.style.display == 'bloc') {
+             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
              } else {
                 itens.style.display = 'block'
